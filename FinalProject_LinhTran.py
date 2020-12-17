@@ -2,7 +2,7 @@
 Name:       Linh Tran
 CS230:      Section SN5
 Data:       ridesharesample.csv
-URL:        Link to your web application online (see extra credit)
+URL:        https://ridesharing-final-project.herokuapp.com/
 
 Description:
 This program summarizes the statistics of ridesharing data, graphs bar charts
@@ -172,7 +172,7 @@ def scatter_plot(lst1, lst2, lst3):
     plt.xticks(np.arange(0,24,1))
     plt.xlabel('Hour')
     plt.ylabel('Temperature')
-    plt.title('Relationship between demand, hour, and outside temperature')
+    plt.title('Scatterplot of demand, hour, and outside temperature')
     st.pyplot(plt)
 
 
@@ -299,7 +299,7 @@ def main():
     Name:   Linh Tran\n
     CS230:  Section SN5\n
     Data:   ridesharesample.csv\n
-    URL:    Link to your web application online (see extra credit)""")
+    URL:    https://ridesharing-final-project.herokuapp.com/""")
 
     st.sidebar.header("Inputs")
     analysis = st.sidebar.radio("Select an analysis:", list(MENU_1.values()))
