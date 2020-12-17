@@ -181,7 +181,7 @@ def scatter_plot(lst1, lst2, lst3):
 #########################################################
 def part1(app, app_name):
     st.header("Part 1: Rides Summary")
-    st.write("_A summary of total, average, min, max number of {app_name} rides in Boston_")
+    st.write(f"_A summary of total, average, min, max number of {app_name} rides in Boston_")
     df = read_data(app)
     st.write("")
 
