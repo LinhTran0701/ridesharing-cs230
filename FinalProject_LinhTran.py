@@ -299,7 +299,7 @@ def main():
     Name:   Linh Tran\n
     CS230:  Section SN5\n
     Data:   ridesharesample.csv\n
-    URL:    https://ridesharing-final-project.herokuapp.com/""")
+    URL:    https://ridesharing-cs230.streamlit.app/""")
 
     st.sidebar.header("Inputs")
     analysis = st.sidebar.radio("Select an analysis:", list(MENU_1.values()))
