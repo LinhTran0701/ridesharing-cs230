@@ -125,9 +125,8 @@ def display_map(df1):
                 "style": {"backgroundColor": "red",  # box color red
                           "color": "white"}          # text color white
                 }
-    pdk.config.set_mapbox_api_key(MAPKEY)
     map = pdk.Deck(
-        map_style='mapbox://styles/mapbox/light-v9',
+        map_style='mapbox://styles/mapbox/light-v9?access_token={MAPKEY}',
         initial_view_state=view_state,
         #mapbox_api_key=MAPKEY, 
         layers=[layer1],
