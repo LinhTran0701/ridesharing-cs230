@@ -1,8 +1,8 @@
 """
 Name:       Linh Tran
-CS230:      Section SN5
+CS230:      Fall 2020
 Data:       ridesharesample.csv
-URL:        https://ridesharing-final-project.herokuapp.com/
+URL:        https://ridesharing-cs230.streamlit.app/
 
 Description:
 This program summarizes the statistics of ridesharing data, graphs bar charts
@@ -262,7 +262,7 @@ def part3(app, app_name):
     st.write(f"_{app_name} ridesharing traffic by hour in Boston_")
     df = read_data(app)
     st.write("")
-    with st.beta_expander("Demand and surge multiplier?"):  # expander to explain
+    with st.expander("Demand and surge multiplier?"):  # expander to explain
         st.write("""
         The higher the surge multiplier, the higher the demand of ridesharing.
          """)
