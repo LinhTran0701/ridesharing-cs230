@@ -105,7 +105,7 @@ def time_select(df, format):
     return time, time_list
 
 def display_map(df1):
-    locations = [[index, row] for index, row in df1.iteritems()]
+    locations = [[index, row] for index, row in df1.items()]
     coordinates = [loc+LOCATIONS[loc[0]] for loc in locations]
     df2 = pd.DataFrame(coordinates, columns=['loc','rides','lat','lon'])
 
